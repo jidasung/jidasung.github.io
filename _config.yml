@@ -1,20 +1,36 @@
 title: Data, world!
 description: > # this means to ignore newlines until "baseurl:"
-  Everything is data
+  Notes on AI projects, the Georgia Tech OMSCS journey, and scuba diving.
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jidasung.github.io" # the base hostname & protocol for your site
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
-author: Jake Jeong # add your name
+author: Hyeong Gyu Jeong # add your name
 author-img: jake-jeong.jpg # add your photo
-about-author: I am a web developer focusing on back-end development. Always hungry to keep learning.
+about-author: AI engineer and lifelong learner — building with data, studying at Georgia Tech OMSCS, and diving when I can.
 social-twitter: jidasung
 social-facebook: jidasung
 social-github: jidasung
 social-linkedin: jidasung
 social-email: hunguenglish@gmail.com
+
+# Main interests / blog categories. Used to organize posts and drive the
+# navigation menu below.
+categories:
+  - AI Projects
+  - OMSCS
+  - Scuba Diving
+
+# Navigation menu (title + tag slug to link into /tags).
+menu:
+  - title: AI Projects
+    slug: ai-projects
+  - title: OMSCS
+    slug: omscs
+  - title: Scuba Diving
+    slug: scuba-diving
 
 # Disqus
 discus-identifier: mr-brown # add your discus identifier
@@ -27,9 +43,18 @@ markdown: kramdown
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-feed
   - jemoji
 
 paginate: 8
 paginate_path: "/page/:num"
 
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+# Default front matter so new posts only need their own metadata.
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock", "new_post.py", "README.md"]
