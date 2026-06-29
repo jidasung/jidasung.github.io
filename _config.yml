@@ -1,6 +1,7 @@
-title: Data, world!
+title: Jake's Tech Blog
 description: > # this means to ignore newlines until "baseurl:"
-  Notes on AI projects, the Georgia Tech OMSCS journey, and scuba diving.
+  A tech blog by Hyeong Gyu Jeong — notes on AI projects, the Georgia Tech
+  OMSCS journey, software engineering, and the occasional dive log.
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jidasung.github.io" # the base hostname & protocol for your site
@@ -9,7 +10,7 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Hyeong Gyu Jeong # add your name
 author-img: jake-jeong.jpg # add your photo
-about-author: AI engineer and lifelong learner — building with data, studying at Georgia Tech OMSCS, and diving when I can.
+about-author: Software & AI engineer writing about what I build and learn — AI projects, OMSCS coursework, and engineering notes. Studying at Georgia Tech OMSCS, diving on the weekends.
 social-twitter: jidasung
 social-facebook: jidasung
 social-github: jidasung
